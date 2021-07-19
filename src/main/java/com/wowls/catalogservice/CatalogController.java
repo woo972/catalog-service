@@ -17,7 +17,7 @@ import java.util.List;
 public class CatalogController {
     private final CatalogService catalogService;
 
-    @GetMapping("/catalgos")
+    @GetMapping("/catalogs")
     public ResponseEntity<List<ResponseCatalog>> getCatalogs(){
         List<ResponseCatalog> responseCatalogList = new ArrayList<>();
         catalogService.getCatalogs().forEach(

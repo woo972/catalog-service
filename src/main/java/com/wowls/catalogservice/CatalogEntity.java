@@ -1,6 +1,7 @@
 package com.wowls.catalogservice;
 
 import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
@@ -8,6 +9,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Getter
+@Setter
 @Entity
 @Table(name = "catalog")
 public class CatalogEntity implements Serializable {
